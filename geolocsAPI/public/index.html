@@ -8,8 +8,12 @@
 </head>
 <body>
     <h1>Geolocation API</h1>
+    <nav>
+        <a href="#">enter</a> | <a href="/all.html">list</a>
+    </nav>
+
     <p>Latitude: <span id="lat"></span></p>
-    <p>Longitude: <span id="long"></span></p>
+    <p>Longitude: <span id="lon"></span></p>
     <button type="button" onclick="sendGeolocation();">Send Geolocation</button>
 
     <script>
@@ -17,11 +21,11 @@
             if('geolocation' in navigator) {
                 navigator.geolocation.getCurrentPosition(async position => {
                     const lat = position.coords.latitude;
-                    const long = position.coords.longitude;
+                    const lon = position.coords.longitude;
                     document.getElementById('lat').innerText = lat;
-                    document.getElementById('long').innerText = long;
+                    document.getElementById('lon').innerText = lon;
                 
-                    const data = {lat, long}
+                    const data = {lat, lon}
                     const options = {
                         method: 'POST',
                         headers: {
