@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>The Weather Here</title>
+</head>
+<body>
+    <h1>The Weather Here</h1>
+    <nav>
+        <a href="/">Check in</a> | <a href="/logs">View checkins</a>
+    </nav>
+    <div>
+        <div id="latLon">
+            <p class=>Latitude: <span id="lat"></span>°</p>
+            <p>Longitude: <span id="lon"></span>°</p>
+            <p>
+                The weather here is <span id="summary"></span> with a temperature of 
+                <span id="temperature"></span>° F.
+            </p>
+            <button id="submit" type="button">Send Data</button>
+        </div><br>
+        
+    </div>
+    
+    <script src="./App.js"></script>
+</body>
+</html>

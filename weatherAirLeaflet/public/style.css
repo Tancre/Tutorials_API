@@ -1,0 +1,35 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: azure;
+}
+
+h1, nav, div {
+    padding: 10px;
+}
+
+nav {
+    font-size: 20px;
+    font-weight: 900;
+}
+
+div {
+    display: inline-block;
+    background-color: rgb(105, 255, 100);
+    margin-left: 10px;
+}
+
+#videoContainer {
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+}
+
+#latLon {
+    float: left;
+    margin-left: 10px;
+}
+
+.logs {
+    display: inline-grid;
+    margin: 10px 0;
+}
