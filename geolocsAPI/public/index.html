@@ -13,9 +13,6 @@
     <button type="button" onclick="sendGeolocation();">Send Geolocation</button>
 
     <script>
-        let saveGeolocs = [];
-        let counter = 0;
-
         function sendGeolocation() {
             if('geolocation' in navigator) {
                 navigator.geolocation.getCurrentPosition(async position => {
